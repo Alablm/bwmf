@@ -142,6 +142,7 @@ class potato_msv_ag: potato_msv_rifleman {// Assistant Grenadier
   magazines[] += {AT_MAG2};
 };
 class potato_msv_sm: potato_msv_rifleman {// Medic
+  backpack[] = {"B_FieldPack_ocamo"};
   magazines[] = {RIFLE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };

@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={794.15643,48.194801,702.33917};
-		dir[]={-0.21359177,-0.60430169,0.7677601};
-		up[]={-0.16200179,0.79666948,0.58232296};
-		aside[]={0.9635036,4.6601053e-007,0.26805115};
+		pos[]={533.04608,11.637926,908.04761};
+		dir[]={-0.39565831,-0.8225041,0.40890184};
+		up[]={-0.57198101,0.56870908,0.59112811};
+		aside[]={0.71871239,-1.366483e-006,0.69544065};
 	};
 };
 binarizationWanted=1;
@@ -392,7 +392,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+  class Category2
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -5505,7 +5505,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=214;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -5524,7 +5524,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=215;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -5624,7 +5624,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.94202,5.0014391,909.9444};
+						position[]={723.94202,5.0014391,909.94397};
 					};
 					side="West";
 					flags=6;
@@ -5636,7 +5636,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=218;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -5655,7 +5655,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=219;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -5767,7 +5767,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=222;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -5786,7 +5786,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=223;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -5898,7 +5898,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=226;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -5917,7 +5917,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=227;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -6029,7 +6029,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=230;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -6048,7 +6048,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=231;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -10781,7 +10781,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=772;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item30
 				{
@@ -10800,7 +10800,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=774;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item31
 				{
@@ -10819,7 +10819,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=776;
-					type="B_crew_F";
+					type="B_Soldier_repair_F";
 				};
 				class Item32
 				{
@@ -14237,7 +14237,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=885;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -14256,7 +14256,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=886;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -14368,7 +14368,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=889;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -14387,7 +14387,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=890;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -14499,7 +14499,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=893;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -14518,7 +14518,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=894;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -14630,7 +14630,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=897;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -14649,7 +14649,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=898;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -14761,7 +14761,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=901;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -14780,7 +14780,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=902;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -18818,7 +18818,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1028;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item30
 				{
@@ -18837,7 +18837,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1029;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item31
 				{
@@ -18856,7 +18856,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1030;
-					type="I_crew_F";
+					type="I_Soldier_repair_F";
 				};
 				class Item32
 				{
@@ -22274,7 +22274,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1138;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -22293,7 +22293,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1139;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -22405,7 +22405,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1142;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -22424,7 +22424,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1143;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -22536,7 +22536,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1146;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -22555,7 +22555,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1147;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -22667,7 +22667,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1150;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -22686,7 +22686,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1151;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -22798,7 +22798,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1154;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item1
 				{
@@ -22817,7 +22817,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1155;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item2
 				{
@@ -26855,7 +26855,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1281;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item30
 				{
@@ -26874,7 +26874,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1282;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item31
 				{
@@ -26893,7 +26893,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1283;
-					type="O_crew_F";
+					type="O_Soldier_repair_F";
 				};
 				class Item32
 				{

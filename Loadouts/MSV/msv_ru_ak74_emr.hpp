@@ -1,10 +1,10 @@
 // Author: Raeth
-// Description: Russian: AK74 - EMR Desert
+// Description: Russian: AK74 - EMR
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag","rhs_weap_ak74m_desert"
+#define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag"
 #define RIFLE_MAG "30Rnd_545x39_Mag_Green_F:8","30Rnd_545x39_Mag_Tracer_Green_F:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_dtk","rhs_acc_perst1ik"
 #define ALT_OPTICS WARSAW_OPTICS,"rhs_acc_1p29","rhs_acc_1p78","rhs_acc_1pn93_1"
@@ -39,14 +39,6 @@
 #define MARKSMAN_MAG "rhs_10Rnd_762x54mmR_7N1:8"
 #define MARKSMAN_ATTACHMENTS "rhs_acc_pso1m21"
 #define MARKSMAN_ALT_OPTICS "rhs_acc_1pn93_1"
-// Sniper Rifle
-#define SNIPER "rhs_weap_svdp_npz"
-#define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:20"
-#define SNIPER_ATTACHMENTS "optic_LRPS"
-// Spotter Rifle
-#define SPOTTER "rhs_weap_ak74m_desert"
-#define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhs_acc_1p78","rhs_acc_perst1ik","rhs_acc_uuk"
 // SMG
 #define SMG "rhs_weap_aks74u"
 #define SMG_MAG "rhs_30Rnd_545x39_AK:6"
@@ -81,10 +73,10 @@ class Plane {};
 class Ship_F {};
 
 class potato_msv_rifleman { // rifleman
-  uniform[] = {"rhs_uniform_emr_des_patchless"};
-  vest[] = {"rhs_6b23_digi_6sh92"};
-  headgear[] = {"rhs_6b27m_digi","rhs_6b27m_digi_bala","rhs_6b27m_digi_ess","rhs_6b27m_digi_ess_bala","rhs_6b47","rhs_6b47_bala","rhs_6b47_ess","rhs_6b47_ess_bala"};
-  backpack[] = {"rhs_assault_umbts"};
+  uniform[] = {"CUP_U_O_RUS_EMR_1","CUP_U_O_RUS_EMR_2","CUP_U_O_RUS_EMR_gloves_pads","CUP_U_O_RUS_EMR_rolled_up_gloves_pads"};
+  vest[] = {"CUP_V_RUS_6B45_1","CUP_V_RUS_6B45_2","CUP_V_RUS_6B45_3"};
+  headgear[] = {"CUP_H_RUS_6B27_cover","CUP_H_RUS_6B27_cover_headset"};
+  backpack[] = {"CUP_B_RUS_Backpack"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
@@ -94,7 +86,6 @@ class potato_msv_rifleman { // rifleman
   opticChoices[] = {ALT_OPTICS};
 };
 class potato_msv_sr: potato_msv_rifleman {// FTL
-  vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
@@ -106,7 +97,7 @@ class potato_msv_sl: potato_msv_sr { // SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR,"rhs_6b27m_digi"};
+  items[] += {RADIO_MR,"CUP_H_RUS_6B27_cover_headset"};
 };
 class potato_msv_plt: potato_msv_sl { // PLT
   headgear[] = {"rhs_fieldcap_digi"};
@@ -118,7 +109,6 @@ class potato_msv_coy: potato_msv_plt { // COY
 };
 class potato_msv_acoy: potato_msv_plt{}; // COY Assistant
 class potato_msv_pol: potato_msv_rifleman { // Political Officer
-  vest[] = {"rhs_vest_commander"};
   headgear[] = {"rhs_beret_mp1"};
   backpack[] = {}; // This loadout looks stupid with a backpack
   weapons[] = {};
@@ -141,7 +131,6 @@ class potato_msv_ag: potato_msv_rifleman {// Assistant Grenadier
   magazines[] += {AT_MAG};
 };
 class potato_msv_sm: potato_msv_rifleman {// Medic
-  vest[] = {"rhs_6b23_digi_medic"};
   magazines[] = {RIFLE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -199,7 +188,7 @@ class potato_msv_mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("O_Mortar_01_support_F")
 };
 class potato_msv_pilot {// Pilot
-  uniform[] = {"rhs_uniform_df15_tan"};
+  uniform[] = {"rhs_uniform_df15"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"rhs_zsh7a_mike"};
   backpack[] = {"B_AssaultPack_rgr"};
@@ -239,18 +228,13 @@ class potato_msv_engl: potato_msv_eng {// Demoman Leader
   linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
-  uniform[] = {"rhs_uniform_gorka_r_g","rhs_uniform_gorka_r_y"};
-  vest[] = {"rhs_6b23_6sh116_od","rhsgref_6b23_khaki_rifleman","rhsgref_6b23_khaki"};
-  headgear[] = {"rhs_6b27m_green","rhs_6b27m_green_bala","rhs_6b27m_green_ess","rhs_6b27m_green_ess_bala","rhs_6b28_green","rhs_6b28_green_bala","rhs_6b28_green_ess","rhs_6b28_green_ess_bala","rhs_beanie_green","rhs_beret_milp","rhsusf_Bowman","rhsusf_bowman_cap"};
-  backpack[] = {"rhs_sidor"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   attachments[] = {RECON_RIFLE_ATTACHMENTS};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
-  vest[] = {"rhs_6b23_6sh116_vog_od"};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,PISTOL_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,PISTOL_MAG};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
@@ -273,7 +257,6 @@ class potato_msv_rifleman_04: potato_msv_sf_rifleman {//Recon Assistant Grenadie
   magazines[] += {AT_MAG};
 };
 class potato_msv_sf_sm: potato_msv_sf_rifleman {// Recon Medic
-  vest[] = {"rhsgref_6b23_khaki_medic"};
   magazines[] = {RIFLE_MAG,PISTOL_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };

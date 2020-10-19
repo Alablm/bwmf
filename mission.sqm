@@ -403,8 +403,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-						type[]=
-						{
 		{
 			property="RespawnTemplates";
 			expression="true";

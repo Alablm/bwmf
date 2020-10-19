@@ -4,7 +4,7 @@ class CfgLoadouts {
 
   // Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
   // Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
-  allowMagnifiedOptics = 0;
+  allowMagnifiedOptics = 1;
 
   // Allow changeable optics on a global level, note: optic options obey allowMagnifiedOptics rules
   allowChangeableOptics = 1;
@@ -73,25 +73,36 @@ class CfgLoadouts {
   // US: M16 - Marine Pattern Desert "Loadouts\usmc_m16_marpatd.hpp"
   // US: M16 - Marine Pattern Woodland "Loadouts\usmc_m16_marpatw.hpp"
 
+  //OPTRE
+  //Insurectionists: AR - Woodland "Loadouts\ins_ar_wd.hpp"
+  //Insurectionists: AR - Desert "Loadouts\ins_ar_des.hpp"
+  //Insurectionists: AR - Urban "Loadouts\ins_ar_grey.hpp"
+  //ODST: AR - Woodland "Loadouts\odst_ar_wd.hpp"
+  //ODST: AR - Desert "Loadouts\odst_ar_des.hpp"
+  //ODST: AR - Urban "Loadouts\odst_ar_grey.hpp"
+  //ODST: BR - Woodland "Loadouts\odst_br_wd.hpp"
+  //ODST: BR - Desert "Loadouts\odst_br_des.hpp"
+  //ODST: BR - Urban "Loadouts\odst_br_grey.hpp"
+
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
 
   // West factions
   #include "Loadouts\west_gear.hpp"
   class potato_w { // BluFor
-    #include "Loadouts\us_mx_mtp.hpp"
+    #include "Loadouts\odst_br_wd.hpp"
   };
 
   // Indy factions
   #include "Loadouts\indy_gear.hpp"
   class potato_i { // Indy
-    #include "Loadouts\aaf_f2000_digi.hpp"
+    #include "Loadouts\odst_ar_wd.hpp"
   };
 
   // East Factions
   #include "Loadouts\east_gear.hpp"
   class potato_e { // OpFor
-    #include "Loadouts\csat_sama_hex.hpp"
+    #include "Loadouts\ins_ar_wd.hpp"
   };
 
   // Civilians (mainly for RP missions)
